@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	border: 7px dashed dodgerblue;
+	background: gold;
+	height: 635px;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,.8);
+	box-shadow: 0 15px 20px rgba(0,0,0,.5);
+	border-radius: 15px;
+	box-sizing: border-box;
+	padding: 40px;
+}
+.box .inputbox input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 30px;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid white;
+}
+.box .inputbox{
+	position: relative;
+}
+.box .inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	color: gold;
+	margin-top: 10px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+{
+	top: -18px;
+	left: 0;
+	color: dodgerblue;
+	font-size: 12px;
+}
+.box h2{
+	margin: 10px 0; 
+	padding: 0;
+	text-align: center;
+	color: gold;
+}
+.box input[type="submit"]{
+	width: 100px;
+	height: 25px;
+	color: white;
+	background-color: dodgerblue;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
